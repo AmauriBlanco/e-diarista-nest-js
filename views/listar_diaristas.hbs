@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de diaristas</title>
+</head>
+<body>
+    <h1>Lista de Diaristas</h1>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Idade</th>
+        </thead>
+        <tbody>
+            {{#each diaristas}}
+            <tr>
+                <th>{{this.id}}</th>
+                <th>{{this.nome}}</th>
+                <th>{{this.endereco}}</th>
+                <th>{{this.idade}}</th>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+</html>
