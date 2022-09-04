@@ -1,0 +1,17 @@
+<main class="container" style="width: 40%;">
+    <form action="/diaristas/{{diarista.id}}?_method=Patch" method="post">
+        <div>
+            <label class="form-label" for="nome">Nome: </label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do(a) diarista" value="{{diarista.nome}}">
+        </div>
+        <div class="my-3">
+            <label class="form-label" for="nome">Endereço: </label>
+            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço completo" value="{{diarista.endereco}}">
+        </div>
+        <div>
+            <label class="form-label" for="nome">Idade: </label>
+            <input type="number" class="form-control" id="idade" name="idade" placeholder="Idade do(a) diarista" value="{{diarista.idade}}">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Atualizar</button>
+    </form>
+</main>
